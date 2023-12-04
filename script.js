@@ -13,14 +13,19 @@ button_push.addEventListener("click", push);
 
 const button_indexof = document.getElementById("button_indexof");
 button_indexof.addEventListener("click", indexof);
+
 const button_includes = document.getElementById("button_includes");
 button_includes.addEventListener("click", includes);
+
 const button_slice = document.getElementById("button_slice");
 button_slice.addEventListener("click", slice);
+
 const button_splice = document.getElementById("button_splice");
 button_splice.addEventListener("click", splice);
+
 const button_map = document.getElementById("button_map");
 button_map.addEventListener("click", map);
+
 const button_filter = document.getElementById("button_map");
 button_map.addEventListener("click", filter);
 
@@ -57,8 +62,8 @@ function splice() {
 function map() {
     const i1 = eval(input1.value);
     const i2 = eval(input2.value);
-    const i3 = eval(input3.value);
-    output.publish(i1.map((x)=>x, i3, i2));
+    let mapi1 = i1.map((x)=> {return x * i2});
+    output.publish(mapi1);
 }
 function filter() {
     const i1 = eval(input1.value);
