@@ -128,5 +128,5 @@ function spread() {
 function reduce() {
     const i1 = eval(input1.value);
     const i2 = eval(input2.value);
-    output.publish(i1.reduce((acc, curr) => acc + curr, i2));
+    output.publish(i1.reduce((acc, curr) => acc + curr * i2));
 }
